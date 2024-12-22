@@ -1,0 +1,234 @@
+{
+    "conversations": {
+        "start": {
+            "speaker": "Dr. Jean Kao",
+            "text": "Excuse me, are you the detective I was told about? *She adjusts her glasses, studying you with a mix of curiosity and caution*",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "*Straighten your tie* Yes, that would be me. And you must be Dr. Kao?",
+                    "nextNode": "player_formal_response"
+                },
+                {
+                    "id": "2",
+                    "text": "Detective? I'm just looking for the cafeteria...",
+                    "nextNode": "player_humorous_response"
+                },
+                {
+                    "id": "3",
+                    "text": "*Squint at her suspiciously* Who wants to know?",
+                    "nextNode": "player_suspicious_response"
+                }
+            ]
+        },
+        "player_formal_response": {
+            "speaker": "Detective",
+            "text": "*Straightening tie* Yes, that would be me. And you must be Dr. Kao?",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/detective_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Continue]",
+                    "nextNode": "formal_intro"
+                }
+            ]
+        },
+        "player_humorous_response": {
+            "speaker": "Detective",
+            "text": "Detective? I'm just looking for the cafeteria... *A slight smirk plays across your face*",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/detective_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Continue]",
+                    "nextNode": "humorous_intro"
+                }
+            ]
+        },
+        "player_suspicious_response": {
+            "speaker": "Detective",
+            "text": "*Squinting suspiciously* Who wants to know?",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/detective_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Continue]",
+                    "nextNode": "suspicious_intro"
+                }
+            ]
+        },
+        "formal_intro": {
+            "speaker": "Dr. Jean Kao",
+            "text": "Yes, I'm Dr. Kao. *Her posture relaxes slightly* I appreciate your punctuality. We have a... situation that requires your particular expertise.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "What kind of situation are we talking about, doctor?",
+                    "nextNode": "player_ask_situation"
+                },
+                {
+                    "id": "2",
+                    "text": "*Glance around the room* Something that can't be discussed here?",
+                    "nextNode": "player_glance_around"
+                }
+            ]
+        },
+        "player_ask_situation": {
+            "speaker": "Detective",
+            "text": "What kind of situation are we talking about, doctor? *You maintain a professional tone*",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/detective_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Continue]",
+                    "nextNode": "situation_explanation"
+                }
+            ]
+        },
+        "player_glance_around": {
+            "speaker": "Detective",
+            "text": "*Glancing around the room with practiced casualness* Something that can't be discussed here?",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/detective_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Continue]",
+                    "nextNode": "private_discussion"
+                }
+            ]
+        },
+        "humorous_intro": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*A slight smile breaks through her professional demeanor* The cafeteria is two floors down, but something tells me you already knew that. Your reputation for... unconventional approaches precedes you.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "Guilty as charged. Shall we discuss why you really need me here?",
+                    "nextNode": "situation_explanation"
+                },
+                {
+                    "id": "2",
+                    "text": "My reputation? All good things, I hope?",
+                    "nextNode": "reputation_discussion"
+                }
+            ]
+        },
+        "suspicious_intro": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*She matches your suspicion with professional detachment* Someone who values discretion as much as you do, detective. *She produces an ID card* Dr. Jean Kao, Department Head.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "Department Head? Of what exactly?",
+                    "nextNode": "department_reveal"
+                },
+                {
+                    "id": "2",
+                    "text": "*Examine the ID carefully* Alright, Dr. Kao. You have my attention.",
+                    "nextNode": "situation_explanation"
+                }
+            ]
+        },
+        "situation_explanation": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*Lowering her voice* Three days ago, we discovered something in the lower labs. Something that shouldn't exist. *Her eyes dart to the security camera* Something that challenges everything we thought we knew.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "And you need someone who can keep secrets?",
+                    "nextNode": "secrets_discussion"
+                },
+                {
+                    "id": "2",
+                    "text": "*Look directly at the security camera* Perhaps we should continue this elsewhere?",
+                    "nextNode": "private_discussion"
+                },
+                {
+                    "id": "3",
+                    "text": "Shouldn't exist? In my experience, doctor, everything exists. It's just a matter of where you look.",
+                    "nextNode": "philosophical_discussion"
+                }
+            ]
+        },
+        "secrets_discussion": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*She nods slowly* Yes. Someone who understands the value of... discretion. And someone who can handle unusual situations.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Restart conversation]",
+                    "nextNode": "start"
+                }
+            ]
+        },
+        "private_discussion": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*She gestures toward a door marked 'Lab 7'* Perhaps we should continue this conversation somewhere more... private.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Restart conversation]",
+                    "nextNode": "start"
+                }
+            ]
+        },
+        "philosophical_discussion": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*A glimmer of intrigue crosses her face* An interesting perspective, detective. Perhaps you're better prepared for what we found than I initially thought.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Restart conversation]",
+                    "nextNode": "start"
+                }
+            ]
+        },
+        "department_reveal": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*Her expression becomes guarded* Theoretical Physics. Though what we discovered three days ago... it's far from theoretical.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Restart conversation]",
+                    "nextNode": "start"
+                }
+            ]
+        },
+        "reputation_discussion": {
+            "speaker": "Dr. Jean Kao",
+            "text": "*A knowing look crosses her face* Let's just say your methods are... unconventional, but your results speak for themselves.",
+            "portrait": "images/main_scene.webp",
+            "speakerPortrait": "images/jean_kao_portrait.webp",
+            "choices": [
+                {
+                    "id": "1",
+                    "text": "[Restart conversation]",
+                    "nextNode": "start"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,566 @@
+{
+    "conversations":{
+       "start":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She glances nervously at the security cameras before turning to you* Detective, I need your help. We've received a message... from another timeline.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Another timeline? What are you talking about?",
+                "nextNode":"kao_final"
+             }
+          ]
+       },
+       "player_greeting":{
+          "speaker":"Detective",
+          "text":"Dr. Kao, I presume? Your message sounded urgent. *You study the monitors behind her, trying to make sense of the data streams*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"[Continue]",
+                "nextNode":"kao_explanation"
+             }
+          ]
+       },
+       "kao_explanation":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She removes her glasses, rubbing her eyes* Three days ago, at 3:47 AM, we detected something in the quantum tunneling chamber. Something that... well, it shouldn't be possible.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"I've heard those words before, doctor. They usually precede something fascinating... or terrifying.",
+                "nextNode":"player_intrigue"
+             }
+          ]
+       },
+       "player_intrigue":{
+          "speaker":"Detective",
+          "text":"I've heard those words before, doctor. They usually precede something fascinating... or terrifying. *A slight smile plays at the corner of your mouth*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"[Continue]",
+                "nextNode":"kao_concern"
+             }
+          ]
+       },
+       "kao_concern":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*Her expression darkens* Both, in this case. We detected a signal. Not from another place, detective, but from another... *she hesitates* another version of here.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Another version? You're talking about parallel universes.",
+                "nextNode":"player_understanding"
+             }
+          ]
+       },
+       "player_understanding":{
+          "speaker":"Detective",
+          "text":"Another version? You're talking about parallel universes. *You glance at the security camera in the corner, noting its red light is off*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"[Continue]",
+                "nextNode":"kao_confirmation"
+             }
+          ]
+       },
+       "kao_confirmation":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She notices your glance* Yes. And no, we're not being recorded. I had the cameras disabled. What I'm about to show you... *She moves to a locked cabinet* Well, let's just say some things are better left off the record.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"What exactly did you receive in this signal?",
+                "nextNode":"player_question"
+             }
+          ]
+       },
+       "player_question":{
+          "speaker":"Detective",
+          "text":"What exactly did you receive in this signal? *You watch as she inputs a complex sequence into the cabinet's keypad*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"[Continue]",
+                "nextNode":"kao_reveal"
+             }
+          ]
+       },
+       "kao_reveal":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*The cabinet opens with a hiss* A warning. From ourselves. *She removes a small device, glowing with an impossible blue light* And instructions on how to prevent something. Something terrible.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"And you need someone who can operate outside official channels.",
+                "nextNode":"player_realization"
+             }
+          ]
+       },
+       "player_realization":{
+          "speaker":"Detective",
+          "text":"And you need someone who can operate outside official channels. *Your eyes are drawn to the strange device, its light seeming to pulse in rhythm with your heartbeat*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"[Continue]",
+                "nextNode":"kao_final"
+             }
+          ]
+       },
+       "kao_final":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She places the device in your hands* Exactly. Because according to the message, we have exactly 48 hours before it happens. And detective... *her voice drops to a whisper* in every other timeline where we reported this officially, we failed.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Tell me more about these other timelines. What exactly happened?",
+                "nextNode":"timeline_discussion"
+             },
+             {
+                "id":"2",
+                "text":"The device... it feels *wrong* somehow. Like it's not supposed to exist here.",
+                "nextNode":"device_examination"
+             },
+             {
+                "id":"3",
+                "text":"Why me? Why not another scientist or government agent?",
+                "nextNode":"why_detective"
+             }
+          ]
+       },
+       "timeline_discussion":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*Her hands tremble slightly as she pulls up data on a monitor* Each timeline ends the same way - a cascade of quantum events that... *she pauses, choosing her words carefully* Let's just say reality itself begins to unravel.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"And you believe we can prevent it?",
+                "nextNode":"prevention_discussion"
+             },
+             {
+                "id":"2",
+                "text":"[Study the monitor data silently]",
+                "nextNode":"data_analysis"
+             }
+          ]
+       },
+       "device_examination":{
+          "speaker":"Detective",
+          "text":"*You turn the device over in your hands, its impossible blue light casting strange shadows* There's something about it that makes my teeth ache. Like static electricity in my brain.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"How does it work?",
+                "nextNode":"device_explanation"
+             },
+             {
+                "id":"2",
+                "text":"[Try to focus on the pulsing light]",
+                "nextNode":"light_focus"
+             }
+          ]
+       },
+       "why_detective":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She gives you an appraising look* Because in the one timeline where we came close to succeeding, it was you. Something about your... unconventional methods. Your ability to see connections others miss.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"What do we need to do first?",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "prevention_discussion":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She brings up a complex diagram showing branching timelines* In the message, they... we... included a set of coordinates. A location in the industrial district. Something happens there that triggers everything.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"What exactly are we looking for?",
+                "nextNode":"target_details"
+             },
+             {
+                "id":"2",
+                "text":"*A strange feeling washes over you* I've... been there before, haven't I? In another timeline?",
+                "nextNode":"deja_vu"
+             }
+          ]
+       },
+       "data_analysis":{
+          "speaker":"Detective",
+          "text":"*The numbers scroll past your eyes, a dizzying array of quantum measurements and probability calculations. Something about them seems familiar, like a half-remembered dream*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"These readings... they're getting stronger, aren't they?",
+                "nextNode":"increasing_danger"
+             },
+             {
+                "id":"2",
+                "text":"Show me the original message. Word for word.",
+                "nextNode":"original_message"
+             }
+          ]
+       },
+       "device_explanation":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She points to various components* It's a quantum entanglement detector. But it's... different. More advanced than anything we have. The other timeline must have been further along in their research.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"And it can help us find what we're looking for?",
+                "nextNode":"device_purpose"
+             },
+             {
+                "id":"2",
+                "text":"*The blue light seems to be getting brighter* Is it supposed to do that?",
+                "nextNode":"device_anomaly"
+             }
+          ]
+       },
+       "light_focus":{
+          "speaker":"Detective",
+          "text":"*As you stare into the pulsing blue light, images flash through your mind - fragments of other timelines, other possibilities. The weight of countless failures bears down on you*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"*Pull yourself away from the light*",
+                "nextNode":"light_recovery"
+             },
+             {
+                "id":"2",
+                "text":"*Keep staring. There's something important in these visions*",
+                "nextNode":"vision_insight"
+             }
+          ]
+       },
+       "mission_start":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She quickly gathers several files and a small case* We need to move fast. The device will lead us to the anomaly, but we have to be careful. Too much attention and... *she glances at the security cameras again* Well, let's just say some people would kill for this technology.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Lead the way, doctor. Time is not on our side.",
+                "nextNode":"begin_investigation"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "target_details":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*Her expression darkens* A device. Something that shouldn't exist in our timeline. The message wasn't clear on its exact nature, but its activation causes a cascade of quantum events that... *she hesitates* that ends very badly for everyone.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"We should inform the authorities.",
+                "nextNode":"authorities_discussion"
+             },
+             {
+                "id":"2",
+                "text":"Then we'll find it and destroy it.",
+                "nextNode":"mission_start"
+             }
+          ]
+       },
+       "deja_vu":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She looks at you with newfound interest* The quantum resonance might be affecting your consciousness. These... echoes from other timelines, they're getting stronger. It's why we need you, detective. You're somehow connected to all of this.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Tell me more about these other timelines.",
+                "nextNode":"timeline_explanation"
+             },
+             {
+                "id":"2",
+                "text":"Let's focus on the task at hand.",
+                "nextNode":"mission_start"
+             }
+          ]
+       },
+       "increasing_danger":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She nods grimly* The temporal distortions are accelerating. Whatever's going to happen, it's happening soon. We're running out of time.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Then we need to move now.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "original_message":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She pulls up a document on her tablet* 'To those who can hear this: The boundaries between timelines are breaking down. We failed to stop it, but you still have a chance. Find the device. Prevent the cascade. The detective is the key.' *She looks up at you* That's all we got before the signal degraded.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Why me? What makes me so special?",
+                "nextNode":"detective_significance"
+             },
+             {
+                "id":"2",
+                "text":"We're wasting time. Let's go.",
+                "nextNode":"mission_start"
+             }
+          ]
+       },
+       "device_purpose":{
+          "speaker":"Dr. Jean Kao",
+          "text":"It's calibrated to detect quantum anomalies. The kind that occur when something exists that shouldn't - like technology from another timeline. *She adjusts some settings* It should lead us right to it.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Let's test it out.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"*Examine the device more closely*",
+                "nextNode":"light_focus"
+             }
+          ]
+       },
+       "device_anomaly":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She quickly moves to shield the device* No, it's not. The quantum signature is getting stronger. We need to move, now!",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"Right behind you.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "light_recovery":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She steadies you as you stumble back* Careful! The quantum resonance can be... overwhelming. Are you alright?",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"I'm fine. Let's go.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "vision_insight":{
+          "speaker":"Detective",
+          "text":"*Through the kaleidoscope of possibilities, you see it - a warehouse by the old docks. The device is there, humming with impossible energy. But you also see something else: Dr. Kao, in another timeline, working on the very thing that dooms them all*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"*Keep this revelation to yourself*",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"You're involved in this somehow, aren't you, doctor?",
+                "nextNode":"confrontation"
+             }
+          ]
+       },
+       "begin_investigation":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*As you leave the lab, the device pulses with an otherworldly blue light, pointing the way to your destination - and perhaps, to the salvation of all timelines*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"[End of current scene]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "authorities_discussion":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She shakes her head firmly* The authorities wouldn't understand. And some of them... *she glances at the security cameras* Some of them might make things worse. We have to handle this ourselves.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"I don't like this, but you're right.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "timeline_explanation":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She brings up a holographic display* Each timeline is like a thread in a vast tapestry. Usually, they remain separate. But something... or someone... is pulling them together. The consequences of that convergence would be catastrophic.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"And in these other timelines... what happened to me?",
+                "nextNode":"detective_variants"
+             },
+             {
+                "id":"2",
+                "text":"We need to stop this convergence.",
+                "nextNode":"mission_start"
+             }
+          ]
+       },
+       "detective_significance":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*She studies you intently* In every timeline where the device appears, you're there too. Sometimes trying to stop it, sometimes... *she hesitates* Sometimes involved in its creation. You're a constant in this equation, detective.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"That's... unsettling.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"*Look at your hands* What am I really?",
+                "nextNode":"existential_crisis"
+             }
+          ]
+       },
+       "detective_variants":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*Her voice softens* You've lived a thousand lives, detective. In some, you're a hero. In others... *she pauses* Let's focus on making this timeline one of the good ones.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"You're right. Let's go.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "existential_crisis":{
+          "speaker":"Detective",
+          "text":"*A wave of vertigo hits you as memories from other timelines bleed through - success, failure, betrayal, redemption - all spinning together in a quantum dance*",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/detective_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"*Steady yourself* We make our own fate.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       },
+       "confrontation":{
+          "speaker":"Dr. Jean Kao",
+          "text":"*Her expression freezes for a moment before softening* Yes. In another timeline, I... she... created it. That's why I know we have to stop it. I've seen where this leads, detective. Please... trust me.",
+          "portrait":"images/main_scene.webp",
+          "speakerPortrait":"images/jean_kao_portrait.webp",
+          "choices":[
+             {
+                "id":"1",
+                "text":"I trust you. Let's finish this.",
+                "nextNode":"mission_start"
+             },
+             {
+                "id":"2",
+                "text":"[Restart conversation]",
+                "nextNode":"start"
+             }
+          ]
+       }
+    }
+ }

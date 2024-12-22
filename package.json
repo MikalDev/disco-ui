@@ -1,0 +1,15 @@
+{
+  "name": "disco-ui",
+  "version": "1.0.0",
+  "description": "Disco Elysium-style dialogue system",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "start": "npx serve src --no-compression"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

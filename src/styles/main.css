@@ -1,0 +1,130 @@
+:root {
+    --text-color: #ffffff;
+    --background-color: rgba(0, 0, 0, 0.85);
+    --highlight-color: #b8860b;
+    --header-color: rgba(0, 0, 0, 0.95);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.portrait {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.dialogue-container {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.dialogue-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: var(--header-color);
+    border-bottom: 1px solid var(--highlight-color);
+    border-radius: 5px 5px 0 0;
+}
+
+.speaker-portrait {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid var(--highlight-color);
+    margin-right: 15px;
+    box-shadow: 0 0 10px rgba(184, 134, 11, 0.3);
+}
+
+.speaker-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--highlight-color);
+}
+
+.dialogue-text {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+.dialogue-choices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+
+.choice {
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.choice:hover {
+    color: var(--highlight-color);
+}
+
+.choice span.number {
+    color: var(--highlight-color);
+    margin-right: 10px;
+}
+
+.choice.restart {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--highlight-color);
+    text-align: center;
+    background-color: rgba(184, 134, 11, 0.1);
+}
+
+.choice.restart:hover {
+    background-color: rgba(184, 134, 11, 0.2);
+}
+
+/* Animation for text reveal */
+@keyframes textReveal {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.revealing {
+    animation: textReveal 0.5s ease forwards;
+}
